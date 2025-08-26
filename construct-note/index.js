@@ -16,3 +16,7 @@ function constructNote(message, letters) {
 
   return builtMessage.join("") === message;
 }
+
+const note = constructNote("abc", "dcba");
+
+console.log(note);
