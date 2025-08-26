@@ -18,9 +18,6 @@ function constructNote(message, letters) {
   return builtMessage.join("") === message;
 }
 
-const note = constructNote("abc", "dcba");
-console.log(note);
-
 // Solution 2
 function constructNote2(message, letters) {
   const hashTable = {};
@@ -41,6 +38,3 @@ function constructNote2(message, letters) {
 
   return values;
 }
-
-const note2 = constructNote2("aaa", "bcabcaddff");
-console.log(note2);
