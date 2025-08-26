@@ -3,4 +3,5 @@
 Data Structures and Algorithms to practice my skills.
 
 # To Run an Exercise
-`node <filename>`
+
+`npm start <directory>`
