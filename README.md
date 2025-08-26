@@ -2,6 +2,6 @@
 
 Data Structures and Algorithms to practice my skills.
 
-# To Run an Exercise
+# To run an exercise
 
 `npm start <directory>`

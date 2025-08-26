@@ -1,3 +1,4 @@
+// Solution 1
 function constructNote(message, letters) {
   const messageArr = Array.from(message);
   const lettersArr = Array.from(letters);
@@ -18,5 +19,28 @@ function constructNote(message, letters) {
 }
 
 const note = constructNote("abc", "dcba");
-
 console.log(note);
+
+// Solution 2
+function constructNote2(message, letters) {
+  const hashTable = {};
+
+  for (let char of message) {
+    hashTable[char] = (hashTable[char] || 0) + 1;
+  }
+
+  if (Object.keys(hashTable).length === 0) return false;
+
+  for (let char of letters) {
+    if (hashTable[char]) {
+      hashTable[char] = hashTable[char] - 1;
+    }
+  }
+
+  const values = !Object.values(hashTable).find((val) => val !== 0);
+
+  return values;
+}
+
+const note2 = constructNote2("aaa", "bcabcaddff");
+console.log(note2);
