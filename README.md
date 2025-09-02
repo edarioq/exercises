@@ -1,6 +1,6 @@
 # Exercises
 
-Data Structures and Algorithms to practice my skills.
+Data Structures and Algorithms.
 
 # To run an exercise
 
